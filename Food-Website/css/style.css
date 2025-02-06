@@ -1,0 +1,856 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+:root
+{
+    --bg--darkblue: #21243d;
+    --bg--skin: #ffd17e;
+}
+header{
+    background-color: var(--bg--darkblue);
+}
+#navigation
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu1{
+    display: none;
+}
+.logo
+{
+    width: 210px;
+}
+img
+{
+    width: 100%;
+}
+ul
+{
+    display: flex;
+    list-style: none;
+}
+ul li
+{
+    margin: 0px 20px;
+    position: relative;
+}
+li a
+{
+    text-decoration: none;
+    color: white;
+}
+.icon-1{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .icon-1 input#search::-webkit-input-placeholder {
+     color: white;
+  }
+   
+  .icon-1 input#search:-moz-placeholder { 
+     color: #65737e;  
+  }
+   
+  .icon-1 input#search::-moz-placeholder {  
+     color: #65737e;  
+  }
+   
+  .icon-1 input#search:-ms-input-placeholder {  
+      color: #65737e;  
+  }
+
+  .icon-1 .icon{
+    position: absolute;
+    top: 0%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: white;
+  }
+  
+  .icon-1 input#search:focus, .container-2 input#search:active{
+    outline:none;
+    width: 300px;
+  }
+   
+  .icon-1:hover input#search{
+  width: 300px;
+  }
+   
+  .icon-1:hover .icon{
+    color: white;
+  }
+/* header ul li a::after
+{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    transition: all 0.5s;
+}
+header ul li:hover a::after
+{
+    color: white;
+    width: 100%;
+} */
+.main
+{
+  background:linear-gradient(rgba(255,209,126,0.2),rgba(255,209,126,0.2)), url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 91vh;
+  position: relative;
+}
+.title
+{
+    position: absolute;
+    top: 20%;
+    color: white; 
+    left: 5%;  
+}
+.title h1
+{
+   font-weight: bold;
+   font-size: 100px;
+}
+#changingText 
+{
+    color: #ffd166;
+    border-right: 1px solid black;
+}
+  
+  @keyframes cursoranim
+{
+    50% {
+      border-right: 1px solid rgba(0, 0, 0, 0);
+    }
+}
+button
+{
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: var(--bg--darkblue);
+    color: white;
+    outline: none;
+    border: none;
+    margin: 30px;
+} 
+ button:hover 
+{
+    transform: scale(1.5);
+}
+.menu
+{
+    background-color: var(--bg--darkblue);
+    position: relative;
+    padding: 50px 0px;
+    display: block;
+}
+.title1
+{ 
+    text-align: center;
+    color: white;
+}
+.title1 h1
+{
+    font-size:50px;
+}
+.title1 p
+{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.foodimg
+{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.food1
+{
+    width: 245px;
+    color: white;
+    text-align: center;  
+}
+.food1 img
+{
+    width: 100%;
+    border-radius: 50%;
+}
+.menu .shape{
+    display: block;
+}
+.shapeimg-1
+{
+    width: 30px;
+    position: absolute;
+    top: -4%;
+    left: 33%;
+}
+.shapeimg-1 img
+{
+    width: 100%;
+    transform: rotate(90deg);
+    
+}
+.shapeimg-2
+{
+    width: 70px;
+    position: absolute;
+    top: 15%;
+   left: 15%;
+}
+.shapeimg-2 img
+{
+    width: 100%;
+}
+.shapeimg-3
+{
+    width: 130px;
+    position: absolute;
+    top: 60%;
+   left: 0%;
+}
+.shapeimg-3 img
+{
+    width: 100%;
+    transform: rotate(180deg);
+}
+.shapeimg-4
+{
+    width: 70px;
+    position: absolute;
+    top: 85%;
+   left: 95%;
+}
+.shapeimg-4 img
+{
+    width: 100%;
+}
+.shapeimg-5
+{
+    width: 30px;
+    position: absolute;
+    top: 50%;
+   left: 97%;
+}
+.shapeimg-5 img
+{
+    width: 100%;  
+}
+.shapeimg-6
+{
+    width: 130px;
+    position: absolute;
+    top: 0%;
+   left: 93.1%;
+}
+.shapeimg-6 img
+{
+    width: 100%;  
+}
+.title-2
+{
+    background-color: var(--bg--skin);
+    position: relative;
+    padding: 50px 0px;
+}
+.foodimg-2
+{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.title-2 .food2
+{
+    position: relative;
+    width: 245px;
+}
+.title-2 .fod-2
+{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: 50%;
+   
+}
+.food2 .fod4
+{
+    display: block;
+    position: absolute;
+    width: 130px;
+    left: -20%;
+    top: -5%;
+}
+.con
+{
+     margin-left: 10%;
+}
+.con h1
+{
+    font-size:50px;
+}
+.con button
+{
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: var(--bg--darkblue);
+    color: white;
+    outline: none;
+    border: none;
+    margin: 30px;
+}
+.con button:hover 
+{
+    transform: scale(1.5);
+}
+.title-2 .shape-1{
+    display: block;
+}
+
+.shapeblue-2
+{
+    width: 130px;
+    position: absolute;
+    top: 70%;
+    left: 93.1%
+  
+}
+.shapeblue-2 img
+{
+    width: 100%;
+
+}
+.shapeblue-3
+{
+    width: 50px;
+    position: absolute;
+    top: 3%;
+   left: 96%;
+  
+}
+.shapeblue-3 img
+{
+    width: 100%;
+}
+.shapeblue-4
+{
+    width: 50px;
+    position: absolute;
+    top: 80%;
+   left: 2%;
+  
+}
+.shapeblue-4 img
+{
+    width: 100%;
+}
+.shapeblue-5
+{
+    width: 70px;
+    position: absolute;
+    top: 20%;
+   left: 40%;
+}
+.shapeblue-5 img
+{
+    width: 100%;
+}
+.stactistics
+{
+    background-color: var(--bg--darkblue);
+    position: relative;
+    padding: 50px 0px;
+}
+.title2
+{ 
+    text-align: center;
+    color: white;
+}
+.title2 h1
+{
+    font-size:50px;
+}
+.title2 p
+{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+.countdown
+{
+    
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.num
+{
+    padding: 30px 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 200px;
+}
+.num h3
+{
+    color: white;
+    font-size: 30px;
+}
+.num .counter
+ {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+}
+.stactistics .shape-2
+{
+    display: block;
+}
+.shapesec-1
+{
+    width: 130px;
+    position: absolute;
+    top: 76%;
+   left: 30%;
+}
+.shapesec-1 img
+{
+    width: 100%;
+    transform: rotate(90deg);
+}
+.shapesec-2
+{
+    width: 130px;
+    position: absolute;
+    top: 10%;
+   left: 77%;
+}
+.shapesec-2 img
+{
+    width: 100%;
+}
+.shapesec-3
+{
+    width: 130px;
+    position: absolute;
+    top: 5%;
+   left: 10%;
+}
+.shapesec-3 img
+{
+    width: 100%;
+}
+.shapesec-4
+{
+    width: 130px;
+    position: absolute;
+    top: 80%;
+   left: 60%;
+}
+.shapesec-4 img
+{
+    width: 100%;
+}
+.shapesec-5
+{
+    width: 70px;
+    position: absolute;
+    top: 80%;
+   left: 85%;
+}
+.shapesec-5 img
+{
+    width: 100%;
+}
+.shapesec-6
+{
+    width: 70px;
+    position: absolute;
+    top: 25%;
+   left: 10%;
+}
+.shapesec-6 img
+{
+    width: 100%;
+}
+.title-3
+{
+    background-color: var(--bg--skin);
+    position: relative;
+    padding: 50px 0px;
+}
+.title-3 .foodimg-2 .con
+{
+   margin-right: 10%;
+}
+.food3
+{
+    position: relative;
+    width: 245px;
+    color: var(--bg--darkblue);  
+}
+.fod
+{
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+   
+}
+.fod-1
+{
+    position: absolute;
+    width: 200px;
+    left: 60%;
+   
+}
+/* .shapethi-1
+{
+    width: 130px;
+    position: absolute;
+    top: 75%;
+   left: 55%;
+}
+.shapethi-1 img
+{
+    width: 100%;
+} */
+.shape-3
+{
+    display: block;
+}
+.food3 .fod-1
+{
+    display: block;
+}
+.shapethi-2
+{
+    width: 130px;
+    position: absolute;
+    top: 70%;
+   left: 20%;
+}
+.shapethi-2 img
+{
+    width: 100%;
+}
+.shapethi-3
+{
+    width: 70px;
+    position: absolute;
+    top: 20%;
+   left: 30%;
+}
+.shapethi-3 img
+{
+    width: 100%;
+}
+.shapethi-4
+{
+    width: 70px;
+    position: absolute;
+    top: 60%;
+   left: 90%;
+}
+.shapethi-4 img
+{
+    width: 100%;
+}
+.shapethi-5
+{
+    width: 70px;
+    position: absolute;
+    top: 1%;
+   left: 60%;
+}
+.shapethi-5 img
+{
+    width: 100%;
+    transform: rotate(90deg);
+}
+.main-2
+{
+    background-image:url(img/dish.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 50px 0px;
+    position: relative;
+}
+.b-color
+{
+    background-color: var(--bg--darkblue);
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+.comment .main-2 .women
+{
+    width: 100%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px; 
+    position: relative;
+}
+.comment .main-2 .women img
+{
+    width: 20%;
+    border-radius: 50%;
+}
+.comment .main-2 .women h1
+{
+    font-size:50px;
+}
+.comment .main-2 .women p{
+    padding: 50px;
+    margin: auto;
+    width: 50%;
+}
+.contact
+{
+    background-color: var(--bg--skin);
+    padding: 150px 0px;
+    position: relative;
+}
+.title-4
+{
+    text-align: center;
+}
+.title-4 h1
+{
+    font-size:50px;
+}
+.sub
+{
+    position: relative;
+    margin-top: 5%;
+}
+.sub input
+{
+    width: 500px;
+    height: 40px;
+    border-radius: 25px;
+    padding-left: 1%;
+    outline: none;
+    border: none;
+}
+.sub button
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: var(--bg--darkblue);
+    color: white;
+    outline: none;
+    border: none;
+    position: absolute; 
+    margin-top: 0px;
+    margin-left: -150px;
+    
+}
+.contact .shape-4
+{
+    display: block;
+}
+.shapefor-1
+{
+    width: 100px;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+.shapefor-1 img
+{
+    width: 78%;
+}
+.shapefor-2
+{
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    left: 83%
+}
+.shapefor-2 img
+{
+    width: 78%;
+}
+.shapefor-3
+{
+    width: 70px;
+    position: absolute;
+    top: 10%;
+   left: 80%;
+}
+.shapefor-3 img
+{
+    width: 78%;
+}
+.shapefor-4
+{
+    width: 70px;
+    position: absolute;
+    top: 80%;
+   left: 30%;
+}
+.shapefor-4 img
+{
+    width: 78%;
+}
+.shapefor-5
+{
+    width: 50px;
+    position: absolute;
+    top: 70%;
+   left: 93%;
+}
+.shapefor-5 img
+{
+    width: 78%;
+}
+.shapefor-6
+{
+    width: 50px;
+    position: absolute;
+    top: 5%;
+    left: 13%;
+}
+.shapefor-6 img
+{
+    width: 78%;
+    transform: rotate(90deg);
+}
+footer
+{
+        padding: 50px 0px;
+        background-color: black;
+}
+/* .left 
+{
+    margin-left: 5%;
+    padding: 10px 20px;
+} */
+/* .left h1
+{
+    color: white;
+    font-size:50px;
+}
+.left p
+{
+    color: white;
+} */
+.iconlogo
+{
+    margin-top: 1%;
+    margin-left: 0%;
+}
+.iconlogo i
+{
+    margin: 2px;
+    padding: 12px;
+    border: none;
+    outline: none;  
+    color: rgb(0, 102, 255);    
+    border: 1px solid whitesmoke;
+    border-radius: 100px;
+    background-color: whitesmoke;
+}
+.iconlogo i:hover
+{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    transform: scale(1.2);
+}
+.left-row
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.left-row h1
+{
+    color: white;
+    font-size:50px;
+    margin-bottom: 0px;
+}
+.left-row p
+{
+    color: white;
+}
+.die-1 p span
+{
+    font-size: 30px;
+    color: orange;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.die-1 p span:hover
+{
+    color: transparent;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+.die-2,.die-3
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+.die-4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.die-4 a{
+    margin-top: 10px;
+}
+.die-2 h3
+{
+    color: white;
+}
+.die-3 h3
+{
+    color: white;
+}
+.die-4 h3
+{
+    color: white;
+}
+.die-2 a,.die-3 a,.die-4 a
+{
+    text-decoration: none;
+    color: white;
+}
